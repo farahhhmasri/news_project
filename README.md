@@ -8,9 +8,8 @@
 ## 📌 Project Features  
 
 ✅ This project detects the sentiment of the provided news statements. Positive news will have a socre close to +1 or higher, negative news will have a score close to -1 or lower and neutral news will be in-between. <br>
-For this task the used model is **twitter-roberta-base-sentiment**. For in-detail information about it, please check [hugging face roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment).<br>
-In addition to classifying based on the news context, date of the news is also taken into consideration when generating scores, as newer news will have more effect than older news.<br>
-The output is provided as .json file and the news are sorted in the file based on their scores.<br><br>
+For this task the used model is **twitter-roberta-base-sentiment**. For in-detail information about it, please check [hugging face roberta](https://huggingface.co/cardiffnlp/twitter-roberta-base-sentiment). In addition to classifying based on the news context, date of the news is also taken into consideration when generating scores, as newer news will have more effect than older news.<br>
+The output is provided as .json file in which the news are sorted descendingly based on their scores.<br><br>
 
 ✅ There are multiple training expirements for different models trained on the dataset to get the best performance model. Training experiments are tracked using mlflow for better management and versioning.<br><br>
 
@@ -20,9 +19,9 @@ Out-of-box docker image is also available for quicker deployment.
 <br>
 
 ## 🛠️ Installation and usage
-<small>Please note that these commands are tested with windows, in linux it may differ. Change accordingly.</small>
+<small>*Please note that these commands are tested with Windows, in Linux it may differ. Change accordingly.*</small>
 
-### - Option one 
+### ✔ Option one 
   1. Clone the repository:  
   ```git clone https://github.com/farahhhmasri/news_project.git```
 
@@ -35,9 +34,9 @@ Out-of-box docker image is also available for quicker deployment.
   3. Run main.py to run FastAPI:
   ```python main.py```
 
-  4. **Check the provided request example in test directory to get insights on how your request should be.**
+  4. **Check the provided request example in the [test](https://github.com/farahhhmasri/news_project/tree/3de56dfca923fca912b1a7f4f9bc44989fdc69c1/test/request_example) directory to get insights on how your request should be.**
 
-### - Option Two
+### ✔ Option Two
 Pull a pre-created docker image that has the application containerized.
   1. Run ```docker pull farahmasri/news-deploy:latest```
 
@@ -52,5 +51,5 @@ Pull a pre-created docker image that has the application containerized.
 
 
 
-### - Checking training expirements: <br>
-You can run the jupyter notebooks that are provided in [notebooks](https://github.com/farahhhmasri/news_project/tree/99a21fe0765aa7cb6212409cadb9742226e17fff/notebooks) folder to get insights about the training experiments.
+### ✔ Checking training expirements: <br>
+You can run the jupyter notebooks that are provided in [notebooks](https://github.com/farahhhmasri/news_project/tree/3de56dfca923fca912b1a7f4f9bc44989fdc69c1/notebooks/training_experiments) folder to get insights about the training experiments.
