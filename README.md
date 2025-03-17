@@ -38,7 +38,6 @@ Out-of-box docker image is also available for quicker deployment.
 
   5. Send request to ```localhost:8000``` in case you didn't change the host and port in main.py. 
   <br>Once you send a request, three folders will be created logs, output and sys_stats.
-
       - **logs** contain the generated system logs which are essential for debugging.
       - **output** contains the output of the model's classification.
       - **sys_stats** contains the system metrics such as, when the request was sent, response time, the used and available memory. 
@@ -59,4 +58,4 @@ Pull a pre-created docker image that has the application containerized.
 
 
 ### ✔ Checking training expirements: <br>
-You can run the jupyter notebooks that are provided in [notebooks](https://github.com/farahhhmasri/news_project/tree/3de56dfca923fca912b1a7f4f9bc44989fdc69c1/notebooks/training_experiments) folder to get insights about the training experiments.
+You can run the jupyter notebooks that are provided in [notebooks](https://github.com/farahhhmasri/news_project/tree/3de56dfca923fca912b1a7f4f9bc44989fdc69c1/notebooks/training_experiments) folder to get insights about the performed training experiments.
