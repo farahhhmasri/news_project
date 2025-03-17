@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Classification</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the news classififcation API.</h2>
+        <p style="text-align: left;">This API takes data in the form of a json file, ex:</p>
+        <p>[{"id":0,"date":"2007-07-07","news":"the result of booking expediency, each of the concerts from Australia, Japan and China certainly had its own character."}]</p>
+        <br><hr>
+        <p>Outputs are generated using "cardiffnlp/twitter-roberta-base-sentiment" model.</p>
+    </div>
+</body>
+</html>
