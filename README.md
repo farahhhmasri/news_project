@@ -36,6 +36,12 @@ Out-of-box docker image is also available for quicker deployment.
 
   4. **Check the provided request example in the [test](https://github.com/farahhhmasri/news_project/tree/3de56dfca923fca912b1a7f4f9bc44989fdc69c1/test/request_example) directory to get insights on how your request should be.**
 
+  5. Once you send a request, three folders will be created logs, output and sys_stats.
+
+  - **logs** contain the generated system logs which are essential for debugging.
+  - **output** contains the output of the model's classification.
+  - **sys_stats** contains the system metrics such as, when the request was sent, response time, the used and available memory. 
+
 ### ✔ Option Two
 Pull a pre-created docker image that has the application containerized.
   1. Run ```docker pull farahmasri/news-deploy:latest```
